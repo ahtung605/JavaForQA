@@ -1,4 +1,4 @@
-public class testExample {
+public class tests {
     public static void main(String[] args) {
 
         int[] test2 = new int[5];

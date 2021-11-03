@@ -149,7 +149,6 @@ public class ArrayClass {
     }
 
     public static int myRandomValueInt(int min, int max) {
-
         return min + random.nextInt(max - min + 1);
     }
 

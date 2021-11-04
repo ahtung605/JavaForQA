@@ -1,4 +1,4 @@
-package Lection04.online;
+package Lesson04.Online;
 
 import java.util.Random;
 import java.util.Scanner;
@@ -36,6 +36,7 @@ public class ConsoleApp {
     public static char emptyRoom = '_';
     public static char readyRoom = '+';
     public static boolean isRandomStartPointPlayer = false;
+
 
     //---Description Enemy
     public static char enemy = 'E';

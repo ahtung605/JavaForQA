@@ -40,6 +40,19 @@ public class UsefulMetods {
     }
 
     /**
+     * Вспомогательный метод. Печать одномерного массива в консоль
+     * с выводом сообщения перед печатью
+     * @param inputArray
+     */
+    public static void printArray1(String msg, int[] inputArray) {
+        System.out.print(msg + ": ");
+        for (int i = 0; i < inputArray.length; i++) {
+            System.out.print(inputArray[i] + " ");
+        }
+        System.out.println();
+    }
+
+    /**
      * Создание целочисленного одномерного массива (упорядоченного или нет)
      * из чисел от 1 до длины массива
      *
@@ -162,6 +175,18 @@ public class UsefulMetods {
     }
 
     /**
+     * Создание двух диагоналей крест накрест (упощенный метод)
+     *
+     * @param arr
+     */
+    public static void crossFill(int[][] arr) {
+        for (int i = 0; i < arr.length; i++) {
+            arr[i][i] = 1;
+            arr[i][arr.length - 1 - i] = 1;
+        }
+    }
+
+    /**
      * Перемешивание значений массива
      *
      * @param inputArray int Array
@@ -196,8 +221,7 @@ public class UsefulMetods {
      * @return minValue
      */
     public static int minArray(int[] inputArray) {
-        int minValue;
-        minValue = inputArray[0];
+        int minValue = inputArray[0];
         for (int i = 1; i < inputArray.length; i++) {
             if (minValue > inputArray[i]) {
                 minValue = inputArray[i];
@@ -213,8 +237,7 @@ public class UsefulMetods {
      * @return maxValue
      */
     public static int maxArray(int[] inputArray) {
-        int maxValue;
-        maxValue = inputArray[0];
+        int maxValue = inputArray[0];
         for (int i = 1; i < inputArray.length; i++) {
             if (maxValue < inputArray[i]) {
                 maxValue = inputArray[i];
@@ -254,6 +277,24 @@ public class UsefulMetods {
             }
         }
         return check;
+    }
+
+    /**
+     * Проверка баланса массива (альтернативный метод)
+     *
+     * @param array
+     * @return
+     */
+    private static boolean checkBalanceAlt(int[] array) {
+        int right = 0, left = 0;
+        for (int i = 0; i < array.length - 1; i++) {
+            left += array[i];
+            for (int j = i + 1; j < array.length; j++)
+                right += array[j];
+            if (left == right) return true;
+            right = 0;
+        }
+        return false;
     }
 
     /**

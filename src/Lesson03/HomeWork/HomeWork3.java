@@ -46,7 +46,8 @@ public class HomeWork3 {
         printArray(arrInt);
         for (int i = 0; i < arrInt.length; i++) {
             if (arrInt[i] < 6) {
-                arrInt[i] = arrInt[i] * 2;
+                //arrInt[i] = arrInt[i] * 2;
+                arrInt[i] *= 2;
             }
         }
         printArray(arrInt);

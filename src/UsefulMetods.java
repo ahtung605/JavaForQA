@@ -22,6 +22,7 @@ public class UsefulMetods {
 //        int a = scanner.nextInt();
 //        int b = scanner.nextInt();
 //        System.out.println("Результат а + b = " + (valueFromUser("Введите a") + valueFromUser("Введите b")));
+        System.out.println(countLeapYear(10));
 
         System.out.println("Новый пароль: [" + randomPassword(valueFromUser("Укажите длину пароля (Enter length your password)")) + "]");
 
@@ -42,6 +43,7 @@ public class UsefulMetods {
     /**
      * Вспомогательный метод. Печать одномерного массива в консоль
      * с выводом сообщения перед печатью
+     *
      * @param inputArray
      */
     public static void printArray1(String msg, int[] inputArray) {
@@ -359,6 +361,17 @@ public class UsefulMetods {
     public static boolean leapYear(int year) {
         return year % 4 == 0 && year % 100 != 0 || year % 400 == 0;
     }
+
+    /**
+     * Сколько високосных лет прошло, начиная с 1 года н. э.
+     *
+     * @param year год
+     * @return количество
+     */
+    public static int countLeapYear(int year) {
+        return  (year / 4) - (year / 100) + (year / 400);
+    }
+
 
     /**
      * Метод, которому в качестве параметра передается целое число. Метод должен вернуть true, если

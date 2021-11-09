@@ -31,3 +31,7 @@ hs_err_pid*
 # .idea/misc.xml
 # *.ipr
 /out
+
+# specific files
+tests.java
+exampleGame.java

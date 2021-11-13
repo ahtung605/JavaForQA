@@ -1,7 +1,7 @@
 package Lesson07.Online.GuiApp;
 
-import GuiApp.windowParts.GameMap;
-import GuiApp.windowParts.GuiPanel;
+import Lesson07.Online.GuiApp.windowParts.GameMap;
+import Lesson07.Online.GuiApp.windowParts.GuiPanel;
 
 import javax.swing.*;
 import java.awt.*;
@@ -11,7 +11,7 @@ import java.awt.*;
  * Date: 10.11.2021
  */
 
-public class MainWindow extends JFrame {
+public class MainWindow7 extends JFrame {
 
     private int windowWidth = 1024;
     private int windowHeight = 768;
@@ -22,7 +22,7 @@ public class MainWindow extends JFrame {
     private GuiPanel guiPanel;
     private GameMap gameMap;
 
-    MainWindow() {
+    MainWindow7() {
         setupWindow();
 
         guiPanel = new GuiPanel();

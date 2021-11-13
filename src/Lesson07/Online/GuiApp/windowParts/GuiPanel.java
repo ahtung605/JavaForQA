@@ -1,9 +1,9 @@
-package GuiApp.windowParts;
+package Lesson07.Online.GuiApp.windowParts;
 
-import GuiApp.windowParts.guiParts.GameControlArea;
-import GuiApp.windowParts.guiParts.GameInfoArea;
-import GuiApp.windowParts.guiParts.PlayerControlArea;
-import GuiApp.windowParts.guiParts.PlayerInfoArea;
+import Lesson07.Online.GuiApp.windowParts.guiParts.GameControlArea;
+import Lesson07.Online.GuiApp.windowParts.guiParts.GameInfoArea;
+import Lesson07.Online.GuiApp.windowParts.guiParts.PlayerControlArea;
+import Lesson07.Online.GuiApp.windowParts.guiParts.PlayerInfoArea;
 
 import javax.swing.*;
 import java.awt.*;

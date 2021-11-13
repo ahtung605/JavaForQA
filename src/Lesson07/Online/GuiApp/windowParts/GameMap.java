@@ -1,4 +1,4 @@
-package GuiApp.windowParts;
+package Lesson07.Online.GuiApp.windowParts;
 
 import javax.swing.*;
 import java.awt.*;
